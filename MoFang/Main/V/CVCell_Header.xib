@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CVCell_Header" customModule="MoFang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="烧烤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaA-44-oXq">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvJ-jJ-tOA">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="rO2-ST-jCF"/>
+                            <constraint firstAttribute="width" constant="46" id="vcd-9M-xiD"/>
+                        </constraints>
+                        <state key="normal" title="更多"/>
+                        <connections>
+                            <action selector="moreBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Png-6X-xW2"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FaA-44-oXq" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="HhH-79-EtH"/>
+                <constraint firstAttribute="trailing" secondItem="VvJ-jJ-tOA" secondAttribute="trailing" constant="8" id="O6H-sV-Ygn"/>
+                <constraint firstItem="FaA-44-oXq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Rxz-TF-Q99"/>
+                <constraint firstItem="VvJ-jJ-tOA" firstAttribute="centerY" secondItem="FaA-44-oXq" secondAttribute="centerY" id="Uct-FC-WBb"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="FaA-44-oXq" id="inP-5X-PDy"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
